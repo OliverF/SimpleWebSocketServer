@@ -94,6 +94,8 @@ class WebSocket(object):
       # restrict the size of header and payload for security reasons
       self.maxheader = 65536
       self.maxpayload = 4194304
+      
+      super(WebSocket, self).__init__()
 
    def close(self):
       self.client.close()
